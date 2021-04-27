@@ -2,7 +2,6 @@ package com.example.minipaint
 
 import android.content.Context
 import android.graphics.*
-import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
@@ -15,8 +14,6 @@ class MyCanvasView(context: Context) : View(context) {
 
 //    private lateinit var extraCanvas: Canvas
 //    private lateinit var extraBitmap: Bitmap
-
-    private var counter = 0
 
     // Path representing the drawing so far
     private var drawing = Path()
@@ -67,19 +64,10 @@ class MyCanvasView(context: Context) : View(context) {
         super.onDraw(canvas)
 //        canvas.drawBitmap(extraBitmap, 0f, 0f, null)
 
-        // draw the background
         canvas.drawColor(backgroundColor)
-
-        // Draw the drawing so far
         canvas.drawPath(drawing, paint)
-
-        // draw the current new path
         canvas.drawPath(path, paint)
-
-        // draw the frame
         canvas.drawRect(frame, paint)
-
-        //Log.d("MyCanvasView", "ondraw called ${counter++}")
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
