@@ -21,9 +21,9 @@ Technologies
 Environment
 
 - Kotlin 1.7.10
-- Android Studio Chipmunk 2021.2.1
-- Gradle Plugin 7.2.2
+- Android Studio Dolphin 2021.3.1
+- Gradle Plugin 7.3.1
 
 ----
 
-updated: 2022-08-22
+updated: 2022-10-28
