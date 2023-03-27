@@ -18,7 +18,7 @@ One of the toy apps of Google's [Developing Android Apps with Kotlin] at Udacity
 Environment
 
 - Kotlin 1.8.0
-- Android Studio Dolphin 2022.1.1
+- Android Studio Electric Eel 2022.1.1
 - Gradle Plugin 7.4.2
 
 ----
